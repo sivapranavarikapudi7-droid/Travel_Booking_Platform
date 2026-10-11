@@ -1,0 +1,310 @@
+
+/* MY TRIPS PAGE */
+
+.trips-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  padding-bottom: 70px;
+}
+
+/* HERO SECTION */
+
+.trips-hero {
+  background: linear-gradient(120deg, #102b45, #0077ff);
+  color: white;
+  text-align: center;
+  padding: 65px 20px;
+}
+
+.trips-hero h1 {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.trips-hero p {
+  color: #e7f1ff;
+  font-size: 15px;
+}
+
+/* MAIN CONTAINER */
+
+.trips-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 35px 20px;
+}
+
+/* SUMMARY CARDS */
+
+.trips-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 45px;
+}
+
+.summary-card {
+  background: white;
+  padding: 27px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+}
+
+.summary-card span {
+  color: #666;
+  font-size: 14px;
+}
+
+.summary-card h2 {
+  color: #0077ff;
+  font-size: 29px;
+  margin-top: 14px;
+}
+
+/* BOOKING HEADING */
+
+.trips-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.trips-heading h2 {
+  color: #172b45;
+  font-size: 25px;
+}
+
+/* FILTER BUTTONS */
+
+.trips-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.trip-filter {
+  background: white;
+  color: #333;
+  border: 1px solid #dce3ed;
+  border-radius: 20px;
+  padding: 10px 18px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.trip-filter:hover {
+  border-color: #0077ff;
+  color: #0077ff;
+}
+
+.trip-filter.active {
+  background: #0077ff;
+  color: white;
+  border-color: #0077ff;
+}
+
+/* BOOKING LIST */
+
+.trips-list {
+  display: grid;
+  gap: 20px;
+}
+
+/* BOOKING CARD */
+
+.trip-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  transition: 0.2s;
+}
+
+.trip-card:hover {
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* CARD HEADER */
+
+.trip-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.trip-type {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.trip-icon {
+  font-size: 35px;
+}
+
+.trip-type small {
+  color: #777;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.trip-type h3 {
+  font-size: 21px;
+  color: #172b45;
+}
+
+/* STATUS */
+
+.trip-status {
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.trip-status.confirmed {
+  background: #e8f8ed;
+  color: #16783a;
+}
+
+.trip-status.cancelled {
+  background: #fff0f0;
+  color: #b42318;
+}
+
+/* BOOKING DETAILS */
+
+.trip-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding-bottom: 25px;
+}
+
+.trip-details p {
+  color: #666;
+  font-size: 14px;
+}
+
+.trip-details strong {
+  color: #333;
+}
+
+/* CARD FOOTER */
+
+.trip-card-footer {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.trip-card-footer small {
+  color: #777;
+}
+
+.trip-card-footer h2 {
+  color: #0077ff;
+  margin-top: 7px;
+  font-size: 24px;
+}
+
+/* CANCEL BUTTON */
+
+.cancel-trip-btn {
+  background: #fff0f0;
+  color: #b42318;
+  border: 1px solid #f5c2c2;
+  padding: 12px 18px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.cancel-trip-btn:hover {
+  background: #ffe0e0;
+}
+
+/* EMPTY STATE */
+
+.trips-empty {
+  background: white;
+  text-align: center;
+  padding: 55px 20px;
+  border-radius: 12px;
+}
+
+.trips-empty-icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.trips-empty h2 {
+  color: #172b45;
+  margin-bottom: 15px;
+}
+
+.trips-empty p {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.trips-empty a {
+  display: inline-block;
+  background: #0077ff;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.trips-empty a:hover {
+  background: #005bcc;
+}
+
+/* DISCLAIMER */
+
+.trips-disclaimer {
+  text-align: center;
+  color: #777;
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 700px) {
+
+  .trips-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .trips-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .trip-details {
+    grid-template-columns: 1fr;
+  }
+
+  .trip-card-header,
+  .trip-card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .trips-hero h1 {
+    font-size: 29px;
+  }
+
+}
